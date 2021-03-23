@@ -1,13 +1,7 @@
-import React, {
-	DetailedHTMLProps,
-	ReactNode,
-	useEffect,
-	useRef,
-	useState,
-} from "react";
+import React, { ReactNode, useRef, useState } from "react";
 import { FC } from "react";
 import { MdChevronRight } from "react-icons/md";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 
 interface IMenu {
