@@ -54,7 +54,7 @@ $primary: #ffeb3b;
 .hero {
 	padding: 0 25px;
 	position: relative;
-	background: url("./assets/AASTU.png"), #000b;
+	background: url("./assets/AASTU.jpg"), #000b;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -66,7 +66,7 @@ $primary: #ffeb3b;
 
 	@media screen and (min-width: 700px) {
 		& {
-			background: url("./assets/AASTU.png"),
+			background: url("./assets/AASTU.jpg"),
 				linear-gradient(90deg, #333 50%, #f8f8f800);
 			background-repeat: no-repeat;
 			background-blend-mode: multiply;
@@ -245,7 +245,7 @@ $primary: #ffeb3b;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	background: url("./assets/astu2.png"), #333333;
+	background: url("./assets/astu2.jpg"), #333333;
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
