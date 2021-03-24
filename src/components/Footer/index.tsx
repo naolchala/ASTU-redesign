@@ -1,4 +1,5 @@
 import React from "react";
+import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -24,35 +25,74 @@ const Footer = () => {
 							International Relations and Corporate Communications
 						</h4>
 						<div className="addresses">
-							<span>
-								Office:{" "}
-								<a href="tel:+251-22-211-3961">
-									+251-22-211-3961
-								</a>
-							</span>
-							<span>
-								Email:{" "}
-								<a href="mailto:iapr@astu.edu.et">
-									iapr@astu.edu.et
-								</a>
-							</span>
-							<span>P.O.Box: 1888 Adama, Ethiopia</span>
+							<table>
+								<tbody>
+									<tr>
+										<td>Office</td>
+										<td>
+											<a href="tel:+251-22-211-3961">
+												+251-22-211-3961
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td>Email</td>
+										<td>
+											<a href="mailto:iapr@astu.edu.et">
+												iapr@astu.edu.et
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td>P.O.Box</td>
+										<td> 1888 Adama, Ethiopia</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
-						<h4>Office of Registrar</h4>
 						<div className="addresses">
-							<span>
-								Office:{" "}
-								<a href="tel:+251-221-100001">
-									+251-221-100001
-								</a>
-							</span>
-							<span>
-								Email:{" "}
-								<a href="mailto:sar@astu.edu.et">
-									sar@astu.edu.et
-								</a>
-							</span>
-							<span>P.O.Box: 1888 Adama, Ethiopia</span>
+							<h4>Office of Registrar</h4>
+							<table>
+								<tbody>
+									<tr>
+										<td>Office</td>
+										<td>
+											<a href="tel:+251-221-100001">
+												+251-221-100001
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td>Email</td>
+										<td>
+											<a href="mailto:sar@astu.edu.et">
+												sar@astu.edu.et
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td>P.O.Box</td>
+										<td>1888 Adama, Ethiopia</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div className="social">
+						<h5>Find us on Social Media</h5>
+						<div className="social-media-list">
+							<a href="https://www.facebook.com/adamaastu/">
+								<FaFacebook />
+							</a>
+							<a href="http://www.twitter.com">
+								<FaTwitter />
+							</a>
+							<a href="https://youtu.be/2Jmb5_d0m7Y">
+								<FaYoutube />
+							</a>
+							<a href="http://www.linkdin.com">
+								<FaLinkedin></FaLinkedin>
+							</a>
 						</div>
 					</div>
 				</section>

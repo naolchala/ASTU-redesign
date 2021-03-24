@@ -1,3 +1,4 @@
+$primary: #ffeb3b;
 .App {
 	width: 100%;
 	// height: 100vh;
@@ -295,6 +296,18 @@
 				padding: 15px 20px;
 				.addresses {
 					margin-bottom: 15px;
+					table {
+						width: 100%;
+						tr {
+							td {
+								text-align: left;
+								padding: 4px;
+								a {
+									padding: 0;
+								}
+							}
+						}
+					}
 				}
 				h4 {
 					padding: 15px 0;
@@ -305,6 +318,21 @@
 				}
 				a {
 					display: inline;
+				}
+			}
+			.social {
+				.social-media-list {
+					display: flex;
+					padding: 15px;
+					a {
+						display: inline;
+						flex: 1;
+						text-align: center;
+						font-size: 1.6rem;
+						&:hover {
+							color: $primary;
+						}
+					}
 				}
 			}
 		}
