@@ -322,11 +322,10 @@ $primary: #ffeb3b;
 			}
 			.social {
 				.social-media-list {
-					display: flex;
 					padding: 15px;
 					a {
 						display: inline;
-						flex: 1;
+						padding: 10px;
 						text-align: center;
 						font-size: 1.6rem;
 						&:hover {
