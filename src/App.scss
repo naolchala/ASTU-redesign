@@ -1,4 +1,5 @@
 $primary: #ffeb3b;
+$p1: 6em;
 .App {
 	width: 100%;
 	// height: 100vh;
@@ -54,30 +55,24 @@ $primary: #ffeb3b;
 .hero {
 	padding: 0 25px;
 	position: relative;
-	background: url("./assets/AASTU.jpg"), #000b;
+	background: url("./assets/AASTU.jpg"), #0007;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-blend-mode: multiply;
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	height: 100vh;
 
-	@media screen and (min-width: 700px) {
-		& {
-			background: url("./assets/AASTU.jpg"),
-				linear-gradient(90deg, #333 50%, #f8f8f800);
-			background-repeat: no-repeat;
-			background-blend-mode: multiply;
-			background-size: cover;
-			background-attachment: fixed;
+	.section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		&:last-child {
+			display: none;
 		}
 	}
 
-	* {
-		transition: all 300ms ease;
-	}
 	.title {
 		text-transform: uppercase;
 		margin-top: 15px;
@@ -93,19 +88,21 @@ $primary: #ffeb3b;
 		margin-bottom: 50px;
 	}
 	button {
-		padding: 10px 20px;
+		padding: 8px 20px;
 		width: 80%;
 		text-transform: uppercase;
-		font-size: large;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-
 		background: rgb(233, 229, 20);
 		color: black;
 		border: none;
 		outline: none;
 		font-weight: bold;
+		letter-spacing: 1px;
+		&:hover {
+			background: $primary;
+		}
 
 		svg {
 			justify-self: flex-end;
@@ -176,6 +173,7 @@ $primary: #ffeb3b;
 	}
 
 	.link {
+		word-wrap: none;
 		display: flex;
 		align-items: center;
 		transition: all 200ms;
@@ -203,6 +201,7 @@ $primary: #ffeb3b;
 	}
 	.link-group {
 		.links-container {
+			padding-left: 10px;
 			height: auto;
 			overflow: hidden;
 			background: #000000;
@@ -245,7 +244,7 @@ $primary: #ffeb3b;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	background: url("./assets/astu2.jpg"), #333333;
+	background: url("./assets/astu2.jpg"), #00000077;
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -341,5 +340,114 @@ $primary: #ffeb3b;
 		padding: 15px;
 		text-transform: uppercase;
 		font-size: small;
+	}
+}
+
+@media screen and (min-width: 850px) {
+	.header {
+		padding: 15px $p1;
+		height: 100px;
+
+		.menu-btn {
+			display: none;
+		}
+	}
+
+	.hero {
+		padding: 0 $p1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		background: url("./assets/AASTU.jpg"),
+			linear-gradient(90deg, #666666 50%, #f8f8f800);
+		background-repeat: no-repeat;
+		background-blend-mode: multiply;
+		background-size: cover;
+		background-attachment: fixed;
+		.section {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+
+			&:last-child {
+				display: block;
+			}
+		}
+	}
+	.missions {
+		padding-left: $p1;
+		padding-right: $p1;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 50px;
+		article {
+			p,
+			ul {
+				font-size: small;
+			}
+		}
+	}
+	.mob-menu {
+		overflow: hidden;
+		right: 0;
+		position: static;
+		top: 0;
+		background: transparent;
+		height: 100px;
+		bottom: auto;
+		z-index: 300;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		.link {
+			display: inline;
+			padding: 0;
+			cursor: pointer;
+			border-radius: 5px;
+
+			&:hover {
+				background: transparent;
+				color: $primary;
+			}
+
+			&.ddown {
+				font-size: small;
+			}
+			svg {
+				display: none;
+			}
+		}
+
+		.link-group {
+			display: inline;
+			padding: 0;
+
+			.links-container {
+				position: absolute;
+				top: 100%;
+				display: block;
+				padding: 0;
+				.link {
+					display: block;
+					padding: 15px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1100px) {
+	.header {
+		height: 100px;
+		flex-direction: column;
+		padding: 15px;
+	}
+}
+@media screen and (max-width: 850px) {
+	.header {
+		flex-direction: row;
+		height: 60px;
 	}
 }

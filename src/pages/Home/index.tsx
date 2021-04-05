@@ -5,19 +5,22 @@ const Home = () => {
 	return (
 		<>
 			<div className="hero">
-				<h1 className="title">
-					Adama Science and Technology University
-				</h1>
-				<h4 className="subtitle">
-					We are dedicated to Innovative Education
-				</h4>
-				<button className="goto-action">
-					Get Started <MdChevronRight />
-				</button>
+				<div className="section">
+					<h1 className="title">
+						Adama Science and Technology University
+					</h1>
+					<h4 className="subtitle">
+						We are dedicated to Innovative Education
+					</h4>
+					<button className="goto-action">
+						Get Started <MdChevronRight />
+					</button>
 
-				<div className="scroll-down-indicator">
-					<MdChevronRight className="down-arrow"></MdChevronRight>
+					<div className="scroll-down-indicator">
+						<MdChevronRight className="down-arrow"></MdChevronRight>
+					</div>
 				</div>
+				<div className="section"></div>
 			</div>
 			<div className="missions">
 				<article>

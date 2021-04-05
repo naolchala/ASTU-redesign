@@ -9,6 +9,7 @@ interface IMenu {
 }
 interface ILinkGroup {
 	children?: ReactNode;
+	reCalculate?: (el: HTMLDivElement) => void;
 	label: string;
 }
 interface ILink {

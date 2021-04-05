@@ -25,12 +25,12 @@ const App: FC = () => {
 		<div className="App">
 			<div className={`header ${darkHeader || menu ? "dark" : ""}`}>
 				<span className="title">ASTU</span>
+				<Menu open={menu} />
 				<button className="menu-btn" onClick={() => setMenu(!menu)}>
 					<MdMenu />
 				</button>
 			</div>
 
-			<Menu open={menu} />
 			<Switch>
 				<Route path="/" exact component={Home}></Route>
 			</Switch>
